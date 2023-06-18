@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Page</title>
+<!--  <link rel="stylesheet" href="StyleMain.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="Style1Main.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="logo">
+    <div class="lang">
+        <span>Site:</span>
+        <div class="dropdown">
+            <button class="dropbtn">Select</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="Education.html">Education</a>
+                <a href="Hobbies.html">Hobbies</a>
+                <a href="Travel.html">Travel</a>
+                <a href="AboutMe.html">About me</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="together">
+    <div id="main">
+        <h1>INTRO</h1>
+        <p>
+            Hi I'm Nikola, I am 19 years old FINKI student from Prilep.
+        </p>
+        <br>
+        <a href="AboutMe.html">> About me</a>
+        <br>
+    </div>
+    <div id="side">
+        <ul>
+            <li>
+                MY WORK
+            </li>
+            <li>
+                <a id="homeLink" href="index.html">HOME</a>
+            </li>
+            <li>
+                <a id="EduLink" href="Education.html">EDUCATION</a>
+            </li>
+            <li>
+                <a id="hobbyLink" href="Hobbies.html">HOBBIES</a>
+            </li>
+            <li>
+                <a id="travelLink" href="Travel.html">TRAVEL</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Get the HOME anchor tag and the #side element
+    const homeLink = document.getElementById('homeLink');
+    const sideElement = document.getElementById('side');
+    const eduLink = document.getElementById('EduLink');
+    const hobbyLink = document.getElementById('hobbyLink');
+    const travelLink = document.getElementById('travelLink');
+
+    // Add event listener to the HOME anchor tag
+    homeLink.addEventListener('mouseover', function() {
+        // Change the background color of the #side element
+        sideElement.style.backgroundImage = 'url(images/home-bg.jpg)';
+        sideElement.style.backgroundSize = 'cover';
+    });
+
+    homeLink.addEventListener('mouseout', function() {
+        // Restore the default background color of the #side element
+        sideElement.style.backgroundImage = 'none';
+    });
+
+    eduLink.addEventListener('mouseover', function() {
+        // Change the background color of the #side element
+        sideElement.style.backgroundImage = 'url(images/edu-bg.jpg)';
+        sideElement.style.backgroundSize = 'cover';
+    });
+
+    eduLink.addEventListener('mouseout', function() {
+        // Restore the default background color of the #side element
+        sideElement.style.backgroundImage = 'none';
+    });
+
+    hobbyLink.addEventListener('mouseover', function() {
+        // Change the background color of the #side element
+        sideElement.style.backgroundImage = 'url(images/hobby.jpg)';
+        sideElement.style.backgroundSize = 'cover';
+    });
+
+    hobbyLink.addEventListener('mouseout', function() {
+        // Restore the default background color of the #side element
+        sideElement.style.backgroundImage = 'none';
+    });
+
+    travelLink.addEventListener('mouseover', function() {
+        // Change the background color of the #side element
+        sideElement.style.backgroundImage = 'url(images/travel.jpg)';
+        sideElement.style.backgroundSize = 'cover';
+    });
+
+    travelLink.addEventListener('mouseout', function() {
+        // Restore the default background color of the #side element
+        sideElement.style.backgroundImage = 'none';
+    });
+</script>
+
+</body>
+</html>
